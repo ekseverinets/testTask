@@ -1,0 +1,52 @@
+@import "base/reset";
+@import "utils/variables";
+@import "base/common";
+@import "base/scss/fontawesome.scss";
+@import "base/scss/solid.scss";
+@import "base/scss/brands.scss";
+@import "components/header";
+@import "components/footer";
+
+@font-face {
+  font-family: 'EngraversGothicBTW01-Re';
+  src: url(../fonts/EngraversGothicBTW01-Re.woff2) format("woff2"),
+       url(../fonts/EngraversGothicBTW01-Re.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'GrotesqueMTW01-Condense';
+  src: url(../fonts/GrotesqueMTW01-Condense.woff2) format("woff2"),
+       url(../fonts/GrotesqueMTW01-Condense.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Grotesque MT W01 Bold';
+  src: url(../fonts/GrotesqueMTW01-Bold.woff2) format("woff2"),
+  url(../fonts/GrotesqueMTW01-Bold.woff) format("woff");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  min-width: 320px;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: $color-black;
+  background: $color-bg;
+}
+
+.wrapper {
+  flex: 1 0 auto;
+  overflow: hidden;
+  font-family: 'EngraversGothicBTW01-Re', sans-serif;
+}
