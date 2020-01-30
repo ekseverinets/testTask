@@ -1,0 +1,48 @@
+.enjoy_weekend {
+  text-align : center;
+  margin: 65px 0;
+
+  .fl-text__content {
+    display: inline-flex;
+
+    h2 {
+      font: 1.375rem/1.75rem 'GrotesqueMTW01-Condense', sans-serif;
+      text-align: center;
+      letter-spacing: .06rem;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      position: relative;
+      padding: 17px 0;
+
+      &::before,
+      &::after {
+        content: "";
+        border-top: 2px solid #1a1818;
+        width: 100%;
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,0);
+      }
+
+      &::before {
+        top: 0;
+      }
+
+      &::after {
+        bottom: 0;
+      }
+
+      @media (min-width: 768px) {
+        font-size: 2.25rem;
+        line-height: 2.625rem;
+      }
+
+      strong {
+        font-weight: 700;
+        font-family: 'Grotesque MT W01 Bold', sans-serif;
+        display: block;
+      }
+    }
+  }
+}

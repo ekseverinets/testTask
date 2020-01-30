@@ -1,0 +1,33 @@
+.terms_conditions {
+  margin: 0 auto;
+
+  p {
+    max-width: 1000px;
+    text-align: center;
+    margin: 0 auto 20px;
+    padding: 0 30px;
+
+    a {
+      color: $color-black;
+      position: relative;
+      text-decoration: none;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 1px;
+        background-color: #1a1818;
+        width: 100%;
+        transition: width .4s;
+      }
+
+      &:hover {
+        &::after {
+          width: 0;
+        }
+      }
+    }
+  }
+}

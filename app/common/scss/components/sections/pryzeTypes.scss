@@ -1,0 +1,95 @@
+.prize_types {
+  text-align: center;
+  margin-bottom: 50px;
+
+  .fl-text__content {
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 70px;
+      justify-content: center;
+
+      @media (min-width: 768px) {
+        padding-top: 130px;
+        flex-direction: row;
+        align-items: baseline;
+      }
+
+      li {
+        padding-bottom: 25px;
+        margin: 50px 20px;
+        position: relative;
+        max-width: 200px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        @media (min-width: 768px) {
+          margin: 0 20px 20px;
+        }
+
+        &::before {
+          background-size: 50%;
+          background-repeat: no-repeat;
+          background-position: center;
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 50%;
+          height: 70px;
+          width: 70px;
+          background-color: #c10020;
+          border-radius: 50%;
+          transform: translate(-50%, -125%);
+          color: #fff;
+        }
+
+        &:first-child::before {
+          background-image: url(../media/svg/ticket.svg);
+        }
+        &:nth-child(2)::before {
+          background-image: url(../media/svg/aeroplane.svg);
+        }
+        &:nth-child(3)::before {
+          background-image: url(../media/svg/car.svg);
+        }
+        &:last-child::before {
+          background-image: url(../media/svg/bungalow.svg);
+        }
+      }
+    }
+
+    h4 {
+      font-size: 1rem;
+      line-height: 1.375rem;
+      font-family: "Grotesque MT W01 Bold",sans-serif;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+    }
+
+    a {
+      color: $color-black;
+      position: relative;
+      text-decoration: none;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 1px;
+        background-color: #1a1818;
+        width: 100%;
+        transition: width .4s;
+      }
+
+      &:hover {
+        &::after {
+          width: 0;
+        }
+      }
+    }
+  }
+}

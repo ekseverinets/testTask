@@ -1,0 +1,79 @@
+.win_festival {
+  min-height: 300px;
+  position: relative;
+
+  .panel__bg-img {
+    background-position: center center;
+    background-size: cover;
+    min-height: 366px;
+  }
+
+  .panel__container {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    transform: translate(0, -50%);
+    height: auto;
+
+    .slide-description__title {
+      font: normal 3.625rem/4rem 'GrotesqueMTW01-Condense', sans-serif;
+      text-transform: uppercase;
+      color: $color-white;
+
+      @media screen and (max-height: 700px) and (min-width: 768px) {
+        font-size: 7rem;
+        line-height: 7.375rem;
+      }
+
+      @media (min-width: 768px) {
+        font-size: 9rem;
+        line-height: 9.375rem;
+        letter-spacing: .06rem;
+        display: block;
+      }
+
+      em {
+        font: 1.81rem 'Grotesque MT W01 Bold', sans-serif;
+        position: relative;
+        top: -11px;
+        right: 0;
+        border: 6px solid $color-white;
+        border-left: none;
+        border-right: none;
+
+        @media screen and (max-height: 700px) and (min-width: 768px) {
+          font-size: 2.3rem;
+          top: -28px;
+        }
+
+        @media (min-width: 768px) {
+          font-size: 3.625rem;
+          line-height: 4.375rem;
+          top: -34px;
+          border-width: 13px;
+          letter-spacing: .06rem;
+          padding: 7px 0;
+        }
+      }
+
+      strong {
+        font-weight: bold;
+        font-size: 3.625rem;
+        letter-spacing: .5rem;
+        display: block;
+
+        @media screen and (max-height: 700px) and (min-width: 768px) {
+          font-size: 7rem;
+          line-height: 7.375rem;
+        }
+
+        @media (min-width: 768px) {
+          font-size: 9rem;
+          line-height: 9.375rem;
+          letter-spacing: .06rem;
+        }
+      }
+    }
+  }
+}

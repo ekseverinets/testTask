@@ -1,0 +1,33 @@
+.main_prize {
+  text-align: center;
+
+  .fl-text__content h2 {
+    font-size: 1rem;
+    line-height: 1.375rem;
+    font-family: "Grotesque MT W01 Bold",sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    display: inline;
+
+    &::before,
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 45px;
+      height: 18px;
+      position: absolute;
+      top: 0;
+    }
+
+    &::before {
+      left: -50px;
+      background: url(https://d323g1xugy1rkz.cloudfront.net/wp-content/uploads/sites/3/2018/06/21133320/trident-left.svg) no-repeat;
+    }
+
+    &::after {
+      right: -50px;
+      background: url(https://d323g1xugy1rkz.cloudfront.net/wp-content/uploads/sites/3/2018/06/21133323/trident-right.svg) no-repeat;
+    }
+  }
+
+}

@@ -1,0 +1,42 @@
+.win_trip {
+  text-align: center;
+
+  .fl-text__content {
+    font: 1rem/1.75rem 'Grotesque MT W01 Bold', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    max-width: 450px;
+    margin: 0 auto;
+
+    h3 {
+      font: 1.375rem/1.75rem 'Grotesque MT W01 Bold', sans-serif;
+      text-align: center;
+      letter-spacing: .06rem;
+      max-width: 440px;
+      padding: 17px 20px 30px;
+      font-weight: 700;
+      margin: 0 auto;
+    }
+
+    .dates-text {
+      font-size: 1.375rem;
+      font-weight: 700;
+      letter-spacing: .06rem;
+      padding: 0;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
+
+  .fl-image__wrapper {
+    img {
+      margin-bottom: 30px;
+
+      @media (min-width: 768px) {
+        min-width: 260px;
+      }
+    }
+  }
+}
